@@ -1,0 +1,27 @@
+.contact{
+    padding-top: 100px;
+    width: 100%;
+    @media only screen and (min-width : 1224px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    .info{
+        margin-bottom: 30px;
+        p,a{
+            margin: 5px;
+        }
+        @media only screen and (min-width : 1224px) {
+            width: 45%;
+            }
+    }
+    .plan{
+        width: 100%;
+        @media only screen and (min-width : 1224px) {
+            width: 45%;
+            }
+        iframe{
+            width: 100%;
+        }
+    }
+}

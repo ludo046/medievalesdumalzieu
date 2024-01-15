@@ -1,0 +1,12 @@
+@mixin text_title {
+    text-transform: uppercase;
+    margin: 20px 10px;
+    border-bottom: 1px solid black;
+}
+
+@mixin card_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les médiévales du malzieu - accueil</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel:400" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="./archives.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logo.png" alt="logo les médiévales du malzieu">
+        <i class="fa-solid fa-bars burger-btn"></i>
+        <ul class="nav-list">
+            <li><a href="./index.html"></a>Accueil</li>
+            <li><a href="./programme.html">Au programme en 2024</a></li>
+            <li><a href="#">Billeterie</a></li>
+            <li><a href="./archives.html">Archives</a></li>
+            <li><a href="./partenaires.html">Partenaire</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html"></a>Accueil</li>
+            <li><a href="./programme.html">Au programme en 2024</a></li>
+            <li><a href="#">Billeterie</a></li>
+            <li><a href="./archives.html">Archives</a></li>
+            <li><a href="./partenaires.html">Partenaire</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <section id="archives-banner">
+        <div class="banner-content">
+            <h1>Archives</h1>
+            <p>Un retour dans le temps au fil de toutes ces années passées avec vous !</p>
+            <i class="fa-solid fa-chevron-down fa-bounce" onclick="scrollToSection('buffer1')"></i>
+        </div>
+    </section>
+    <section id="archives">
+        <aside class="color">
+            <div id="timeline"></div>
+        </aside>
+        <div class="archives-description">
+            <h2>Les archives</h2>
+            <h3>Un retour dans le temps</h3>
+            <p>
+              Vous ne connaissez pas ou souhaitez vous rappeler des années
+              précédentes alors visionnez nos images et retombez à l'époque
+              médiévale du Malzieu.
+            </p>
+            <a href="./programme.html"
+              >Plus de détail sur la programation
+              <i class="fa-solid fa-arrow-right fa-beat"></i
+            ></a>
+        </div>
+    </section>
+    <section id="years-cards">
+        <ul class="all-cards"></ul>
+    </section>
+</body>
+</html>
+

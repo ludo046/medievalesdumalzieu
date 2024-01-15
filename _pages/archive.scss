@@ -1,0 +1,96 @@
+#archives-banner{
+    background-image: url('../images/bannerArchive.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.596);
+        width: 100%;
+        padding: 15px;
+    }
+}
+#archives{
+    height: 100vh;
+    padding-top: 83px;
+    position: relative;
+    overflow-x: hidden;
+    .color{
+        height: 100%;
+        width: 50px;
+        background-color: rgba(49, 46, 46, 0.461);
+        position: fixed;
+        bottom: 0;
+        box-shadow: 10px 15px 13px -7px #000000, 5px 15px 15px 5px rgba(0,0,0,0);
+        #timeline{
+            left: 0px;
+            height: 80vh;
+            position: absolute;
+            top: 95px;
+        }
+    }
+    .event {
+        position: absolute;
+        left: -10px; /* Ajuster la position des événements par rapport à la frise */
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+      }
+      .years {
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    .archives-description{
+        padding: 0 15px 0 70px;
+    }
+}
+.year-card{
+    height: 100vh;
+    padding-top: 83px;
+    h2{
+        padding-left: 55px;
+    }
+    .year-content{
+        height: 0%;
+        @media only screen and (min-width : 800px) {
+            display: flex;
+            flex-direction: row;
+            }
+        iframe{
+            margin-left: 50px;
+        }
+        .carousel{
+            width: 100%;
+            height: 50%;
+            padding-left: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            @media only screen and (min-width : 740px) {
+                height: 400px;
+                width: 100%;
+                }
+            .slide{
+                display: inline-block;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+}
+
