@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GCVNMCL7CR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GCVNMCL7CR');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les médiévales du malzieu - accueil</title>
@@ -14,9 +23,9 @@
         <img src="./images/logo.png" alt="logo les médiévales du malzieu">
         <i class="fa-solid fa-bars burger-btn"></i>
         <ul class="nav-list">
-            <li><a href="./index.html"></a>Accueil</li>
+            <li><a href="./index.html">Accueil</a></li>
             <li><a href="./programme.html">Au programme en 2024</a></li>
-            <li><a href="#">Billeterie</a></li>
+            <!-- <li><a href="#">Billeterie</a></li> -->
             <li><a href="./archives.html">Archives</a></li>
             <li><a href="./partenaires.html">Partenaire</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -24,9 +33,9 @@
     </nav>
     <div class="menu">
         <ul>
-            <li><a href="./index.html"></a>Accueil</li>
+            <li><a href="./index.html">Accueil</a></li>
             <li><a href="./programme.html">Au programme en 2024</a></li>
-            <li><a href="#">Billeterie</a></li>
+            <!-- <li><a href="#">Billeterie</a></li> -->
             <li><a href="./archives.html">Archives</a></li>
             <li><a href="./partenaires.html">Partenaire</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -36,14 +45,14 @@
         <div class="banner-content">
             <h1>Archives</h1>
             <p>Un retour dans le temps au fil de toutes ces années passées avec vous !</p>
-            <i class="fa-solid fa-chevron-down fa-bounce" onclick="scrollToSection('buffer1')"></i>
+            <i class="fa-solid fa-chevron-down fa-bounce" onclick="scrollToSection('archives-description')"></i>
         </div>
     </section>
     <section id="archives">
         <aside class="color">
             <div id="timeline"></div>
         </aside>
-        <div class="archives-description">
+        <div class="archives-description" id="archives-description">
             <h2>Les archives</h2>
             <h3>Un retour dans le temps</h3>
             <p>
@@ -51,10 +60,7 @@
               précédentes alors visionnez nos images et retombez à l'époque
               médiévale du Malzieu.
             </p>
-            <a href="./programme.html"
-              >Plus de détail sur la programation
-              <i class="fa-solid fa-arrow-right fa-beat"></i
-            ></a>
+            <p onclick="scrollToSection('year2012')">Commençons par le début l'année 2012<i class="fa-solid fa-arrow-right fa-beat"></i></p>
         </div>
     </section>
     <section id="years-cards">

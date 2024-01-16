@@ -22,7 +22,7 @@
 }
 #archives{
     height: 100vh;
-    padding-top: 83px;
+    margin-top: 83px;
     position: relative;
     overflow-x: hidden;
     .color{
@@ -53,6 +53,9 @@
       }
     .archives-description{
         padding: 0 15px 0 70px;
+        h2{
+            padding-top: 83px;
+        }
     }
 }
 .year-card{

@@ -40,6 +40,7 @@ function createTroupeCard(){
     {name : `les crapiauds`, img : 'images/au-programme/crapiauds.jpeg', description : `Reviennent cette année encore, mais cette fois ci avec un tout nouveau spectacle plein de magie !
     Du rêve, de la magie, un grain de folie, un sombre sarrasin, un fantôme, un sorcier. Un moment pour vivre en famille (ou pas), l'expérience étrange et incroyable de pratiques occultes sorties tout droit du moyen âge.`},
     {name : `caminaire`, img : 'images/au-programme/caminaire.jpeg', description : `Nos amis les Caminaire reviennent une fois de plus, avec leur musique médiévale, leurs voix et des pieds pour marcher.`},
+    {name : `Le choeur guillaume`, img : 'images/au-programme/choeur-guillaume.png', description : `Vous pourrez retrouver le choeur guillaume lors d'un concert dans notre église au coeur du malzieu.`},
     {name : `la chevauchee des lices`, img : 'images/au-programme/chevauché.jpeg', description : `Nouvelle au Malzieu, une animation pour enfants qui pourront faire une course de petits chevaux, en jouant les chevaliers.`},
   ]
   for( let i = 0; i < troupes.length; i++){
@@ -59,3 +60,8 @@ function createTroupeCard(){
 }
 createTroupeCard();
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  console.log(section);
+  section.scrollIntoView({ behavior: "smooth" });
+}
