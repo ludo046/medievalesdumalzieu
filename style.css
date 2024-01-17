@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@keyframes beat {
+  0% {
+    width: 300px;
+    height: 150px;
+  }
+  40% {
+    width: 300px;
+    height: 150px;
+  }
+  50% {
+    width: 310px;
+    height: 160px;
+  }
+  60% {
+    width: 300px;
+    height: 160px;
+  }
+  70% {
+    width: 310px;
+    height: 160px;
+  }
+  80% {
+    width: 300px;
+    height: 150px;
+  }
+  100% {
+    width: 300px;
+    height: 150px;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
 #banner {
   height: 100vh;
   padding-top: 83px;
@@ -166,10 +206,32 @@
   text-transform: uppercase;
 }
 
+.load {
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+  animation: opacity 6s 1 ease-out forwards;
+}
+.load img {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.load h2 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #archives-banner {
   background-image: url("../images/bannerArchive.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -188,6 +250,11 @@
   width: 100%;
   padding: 15px;
 }
+#archives-banner .banner-content i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
 
 #archives {
   height: 100vh;
@@ -196,6 +263,7 @@
   overflow-x: hidden;
 }
 #archives .color {
+  display: none;
   height: 100%;
   width: 50px;
   background-color: rgba(49, 46, 46, 0.461);
@@ -207,7 +275,6 @@
   left: 0px;
   height: 80vh;
   position: absolute;
-  top: 95px;
 }
 #archives .event {
   position: absolute;
@@ -226,6 +293,9 @@
 }
 #archives .archives-description h2 {
   padding-top: 83px;
+}
+#archives .archives-description i {
+  padding-left: 10px;
 }
 
 .year-card {

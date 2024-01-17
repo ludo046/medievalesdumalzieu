@@ -3,14 +3,14 @@ const year = [
   {video : '', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2013
   {video : '', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2014
   {video : '', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2015
-  {video : 'https://youtu.be/kth-1lg388o?si=JexSML626e64TcLI', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2016
+  {video : 'https://www.youtube.com/embed/kth-1lg388o?si=YgRfYM9tbTqbo0xH', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2016
   {video : 'https://www.youtube.com/embed/jsin-3UoWaE?si=iMjQ9IcUXFju0qv2', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2017
-  {video : 'https://youtu.be/kKRRPDeCWyg?si=AIB5bTyT5SnZHyEe', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2018
-  {video : 'https://youtu.be/A_zkGMwAjUM?si=t5AWk0dwB0QCfFoX', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2019
+  {video : 'https://www.youtube.com/embed/kKRRPDeCWyg?si=cTequjZnyDmwLpk1', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2018
+  {video : 'https://www.youtube.com/embed/NPdYR4oyjlk?si=Y2L6G9EePLWanj0K', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2019
   {video : '', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2020
   {video : '', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2021
-  {video : 'https://youtu.be/E9e9A9aWZKM?si=1bik7jaIRwqfNfkA', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2022
-  {video : 'https://youtu.be/lCItTjEyGbY?si=kY-nJLHsVBI6GEYU', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2023
+  {video : 'https://www.youtube.com/embed/E9e9A9aWZKM?si=m0lJYF0MR9_YahR-', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2022
+  {video : 'https://www.youtube.com/embed/lCItTjEyGbY?si=7r0C6eisfakDDYwc', image : ['images/archives/2016/1.jpg','images/archives/2016/2.jpg']}, //2023
 ]
 
 
