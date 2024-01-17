@@ -38,3 +38,14 @@
     display: none;
   }
 }
+@keyframes noScroll {
+  0%{
+    overflow: hidden;
+  }
+  99%{
+    overflow: hidden;
+  }
+  100%{
+    overflow: scroll;
+  }
+}

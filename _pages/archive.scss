@@ -1,3 +1,6 @@
+body{
+    animation: noScroll 6s 1 ease-out forwards;
+}
 .load{
     height: 150vh;
     width: 100%;
@@ -52,9 +55,9 @@
     position: relative;
     overflow-x: hidden;
     .color{
-        display: none;
         height: 100%;
         width: 50px;
+        padding-top: 90px;
         background-color: rgba(49, 46, 46, 0.461);
         position: fixed;
         bottom: 0;

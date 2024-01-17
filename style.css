@@ -39,6 +39,17 @@
     display: none;
   }
 }
+@keyframes noScroll {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: scroll;
+  }
+}
 #banner {
   height: 100vh;
   padding-top: 83px;
@@ -206,6 +217,10 @@
   text-transform: uppercase;
 }
 
+body {
+  animation: noScroll 6s 1 ease-out forwards;
+}
+
 .load {
   height: 150vh;
   width: 100%;
@@ -263,9 +278,9 @@
   overflow-x: hidden;
 }
 #archives .color {
-  display: none;
   height: 100%;
   width: 50px;
+  padding-top: 90px;
   background-color: rgba(49, 46, 46, 0.461);
   position: fixed;
   bottom: 0;
