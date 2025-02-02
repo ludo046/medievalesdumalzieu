@@ -3,7 +3,7 @@
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCVNMCL7CR"></script>
-<script>
+<script async >
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -13,43 +13,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les médiévales du malzieu - programmation</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link href="./style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Abel:400" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="./index.js" defer></script>
+    <script src="./troupes.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
-        <img src="./images/logo.png" alt="logo les médiévales du malzieu">
+        <img src="./images/logo.png" alt="">
         <i class="fa-solid fa-bars burger-btn"></i>
-        <ul class="nav-list">
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./programme.html">Au programme en 2024</a></li>
-            <!-- <li><a href="#">Billeterie</a></li> -->
-            <li><a href="./archives.html">Archives</a></li>
-            <li><a href="./partenaires.html">Partenaire</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+          <ul class="nav-list">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./programme.html">Programme</a></li>
+          <li><a href="./billeterie.html">Billeterie</a></li>
+          <li><a href="./archives.html">Archives</a></li>
+          <li><a href="./partenaires.html">Partenaires</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div class="menu">
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./programme.html">Au programme en 2024</a></li>
-            <!-- <li><a href="#">Billeterie</a></li> -->
-            <li><a href="./archives.html">Archives</a></li>
-            <li><a href="./partenaires.html">Partenaire</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </div>
+   </nav>
+   <div class="menu">
+    <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./programme.html">Au programme en 2024</a></li>
+        <li><a href="./billeterie.html">Billetterie</a></li>
+        <li><a href="./archives.html">Archives</a></li>
+        <li><a href="./partenaires.html">Partenaire</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</div>
     <section id="programmation-banner">
         <div class="banner-content">
-            <h1>Programmation 2024</h1>
-            <p>Suivez en temps réel la programmation de la prochaine édition !</p>
+            <h1>Programmation 2025</h1>
+            <p>Suivez en direct la programmation de la prochaine édition !</p>
             <i class="fa-solid fa-chevron-down fa-bounce" onclick="scrollToSection('troupes')"></i>
         </div>
     </section>
     <section id="troupes">
+        <h2>Nos troupes et artistes : </h2>
         <ul class="all-cards"></ul>
+    </section>
+    <section id="campements">
+        <h2>Nos campements : </h2>
+        <ul class="all-campements"></ul>
+    </section>
+    <section id="artisans">
+        <h2>Nos artisans :</h2>
+        <ul class="all-artisants"></ul>
+    </section>
+    <section id="enfants">
+        <h2>Nos animations pour enfants :</h2>
+        <ul class="all-animations"></ul>
     </section>
 </body>
 </html>

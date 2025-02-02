@@ -30,13 +30,13 @@
   }
 }
 @keyframes opacity {
-  from {
-    opacity: 1;
+  0% {
     display: block;
+    opacity: 1;
   }
-  to {
-    opacity: 0;
+  100% {
     display: none;
+    opacity: 0;
   }
 }
 @keyframes noScroll {
@@ -50,110 +50,192 @@
     overflow: scroll;
   }
 }
+body {
+  position: relative;
+}
+
 #banner {
   height: 100vh;
-  padding-top: 83px;
-  background-image: url("../images/banierre.jpeg");
+  width: 100vw;
+  padding-top: 5px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
   position: relative;
 }
+#banner img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+}
 #banner .banner-content {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.596);
-  width: 100%;
-  padding: 15px;
+  color: black;
+  background-color: rgba(163, 161, 161, 0.771);
+  width: 100vw;
+  padding: 5px;
 }
 #banner .banner-content i {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
-#edition-info {
-  height: 100vh;
-  margin: 83px 15px 15px 15px;
+.container {
+  height: 350px;
+  width: 80%;
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  margin: 50px 0;
+  box-shadow: inset -1px 3px 8px 5px rgb(172, 172, 172), 2px 5px 16px 0px #878888, 50px -50px 0px 50px rgba(131, 130, 130, 0);
 }
-@media only screen and (min-width: 1224px) {
-  #edition-info {
-    width: 50%;
-    margin: 0 auto;
-    text-align: justify;
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
   }
 }
-#edition-info h2 {
-  padding-top: 90px;
+.container .container-txt {
+  padding: 20px;
 }
-#edition-info h3 {
-  padding: 20px 0;
+.container .container-txt h1 {
+  margin-bottom: 30px;
 }
-#edition-info p {
-  margin-bottom: 20px;
+.container .container-txt h2 {
+  margin-bottom: 30px;
 }
-@media only screen and (min-width: 1224px) {
-  #edition-info p {
-    line-height: 26px;
-  }
+.container .container-txt p {
+  margin-bottom: 30px;
 }
-#edition-info i {
-  margin-left: 10px;
+.container .container-txt a {
+  border-bottom: 1px solid black;
 }
 
-#partenatiat {
-  background-image: url("../images/info.JPG");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+#info {
+  border-radius: 0 40px 40px 0;
 }
-#partenatiat h2 {
-  padding: 20px 0;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.596);
-  width: 100%;
-  padding: 15px;
+
+#quete {
+  margin-left: 20%;
+  border-radius: 40px 0 0 40px;
 }
-@media only screen and (min-width: 1224px) {
-  #partenatiat h2 {
-    font-size: 2rem;
+@media (max-width: 800px) {
+  #quete {
+    margin-left: 0;
   }
 }
-#partenatiat p {
-  padding: 0 20px 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.596);
+
+#costumes {
+  border-radius: 0 40px 40px 0;
 }
-#partenatiat .parrains {
+#costumes img {
+  border-radius: 0 40px 40px 0;
+}
+
+#benevoles {
+  margin-left: 20%;
+  border-radius: 40px 0 0 40px;
+}
+@media (max-width: 800px) {
+  #benevoles {
+    margin-left: 0;
+  }
+}
+
+#partenaire {
+  border-radius: 0 40px 40px 0;
+}
+#partenaire img {
+  border-radius: 0 40px 40px 0;
+}
+
+#parrains {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 20%;
+  border-radius: 40px 0 0 40px;
+}
+@media (max-width: 800px) {
+  #parrains {
+    margin-left: 0;
+  }
+}
+#parrains h2 {
+  padding: 20px;
+}
+#parrains .parrain {
+  height: 50%;
+  margin: auto 0;
+  display: flex;
   justify-content: space-around;
-  margin-top: 20px;
 }
-#partenatiat .parrains img {
-  width: 45%;
-  margin: 10px 0;
-  object-fit: contain;
+@media (max-width: 800px) {
+  #parrains .parrain {
+    flex-direction: column;
+  }
 }
-@media only screen and (min-width: 1224px) {
-  #partenatiat .parrains img {
-    width: 300px;
+#parrains .parrain img {
+  height: 90%;
+}
+@media (max-width: 800px) {
+  #parrains .parrain img {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: rgb(56, 94, 132);
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 5px 5px 15px 5px #000000;
+  color: rgb(215, 215, 215);
+}
+footer .links {
+  color: rgb(215, 215, 215);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+footer .me {
+  text-align: center;
+  color: rgb(215, 215, 215);
+}
+footer a {
+  color: rgb(215, 215, 215);
+}
+footer a:hover {
+  color: white;
+}
+
+#affiche {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+#affiche img {
+  height: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  #affiche img {
+    width: 100vw;
   }
 }
 
 #programmation-banner {
-  background-image: url("../images/banierre.jpeg");
-  background-attachment: fixed;
+  background-image: url("../images/banner programmation.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,51 +255,58 @@
   padding: 15px;
 }
 
-#troupes {
+#troupes, #campements, #artisans, #enfants {
   width: 100vw;
   overflow: hidden;
   padding-top: 83px;
 }
+#troupes h2, #campements h2, #artisans h2, #enfants h2 {
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
 @media (min-width: 800px) {
-  #troupes {
+  #troupes, #campements, #artisans, #enfants {
     width: 80%;
     margin: 0 auto;
   }
 }
 @media (min-width: 800px) {
-  #troupes ul {
+  #troupes ul, #campements ul, #artisans ul, #enfants ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
-#troupes ul li {
+#troupes ul li, #campements ul li, #artisans ul li, #enfants ul li {
   width: 100%;
   height: 400px;
   margin-bottom: 50px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 @media (min-width: 800px) {
-  #troupes ul li {
+  #troupes ul li, #campements ul li, #artisans ul li, #enfants ul li {
     width: 350px;
-    height: 400px;
+    height: 490px;
     margin-bottom: 50px;
     list-style: none;
   }
 }
-#troupes ul li img {
+#troupes ul li img, #campements ul li img, #artisans ul li img, #enfants ul li img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
-#troupes ul li h2, #troupes ul li p {
+#troupes ul li h3, #troupes ul li p, #campements ul li h3, #campements ul li p, #artisans ul li h3, #artisans ul li p, #enfants ul li h3, #enfants ul li p {
   padding: 10px;
 }
-#troupes ul li h2 {
+#troupes ul li h3, #campements ul li h3, #artisans ul li h3, #enfants ul li h3 {
   text-transform: uppercase;
 }
 
-body {
+.no-scroll {
   animation: noScroll 6s 1 ease-out forwards;
 }
 
@@ -244,8 +333,8 @@ body {
 }
 
 #archives-banner {
+  padding-top: 83px;
   background-image: url("../images/bannerArchive.jpg");
-  background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,6 +353,7 @@ body {
   background-color: rgba(0, 0, 0, 0.596);
   width: 100%;
   padding: 15px;
+  z-index: 2;
 }
 #archives-banner .banner-content i {
   cursor: pointer;
@@ -320,19 +410,10 @@ body {
 .year-card h2 {
   padding-left: 55px;
 }
-.year-card .year-content {
-  height: 0%;
-}
-@media only screen and (min-width: 800px) {
-  .year-card .year-content {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.year-card .year-content iframe {
+.year-card iframe {
   margin-left: 50px;
 }
-.year-card .year-content .carousel {
+.year-card .carousels {
   width: 100%;
   height: 50%;
   padding-left: 50px;
@@ -340,23 +421,30 @@ body {
   white-space: nowrap;
 }
 @media only screen and (min-width: 740px) {
-  .year-card .year-content .carousel {
+  .year-card .carousels {
     height: 400px;
     width: 100%;
   }
 }
-.year-card .year-content .carousel .slide {
+.year-card .carousels .slide {
   display: inline-block;
   height: 100%;
+  width: 100%;
 }
-.year-card .year-content .carousel .slide img {
+.year-card .carousels .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 nav {
   top: 0;
+}
+
+.formule {
+  padding-top: 70px;
+  padding-left: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .formule_bloc h2 {
@@ -379,6 +467,21 @@ nav {
   height: 350px;
 }
 .formule_bloc .card_bloc_parrainage .card_parrainage img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.formule_bloc .card_bloc_partenaire {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.formule_bloc .card_bloc_partenaire .card_partenaire {
+  width: 350px;
+  height: 350px;
+}
+.formule_bloc .card_bloc_partenaire .card_partenaire img {
   width: 100%;
   height: 300px;
   object-fit: contain;
@@ -453,6 +556,42 @@ nav {
   width: 100%;
 }
 
+.mentions {
+  padding-top: 90px;
+  padding-left: 10px;
+}
+.mentions h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.mentions h2 {
+  padding: 10px 0;
+  font-style: italic;
+}
+
+#billeterie {
+  margin-top: 120px;
+}
+@media only screen and (min-width: 1224px) {
+  #billeterie {
+    width: 80%;
+    margin: 120px auto 0;
+  }
+}
+#billeterie h2, #billeterie h1 {
+  padding-left: 20px;
+}
+#billeterie h2 {
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  margin: 20px 10px;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+#billeterie h1 {
+  font-size: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -470,11 +609,11 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100%;
-  background: #345995;
+  width: 100vw;
+  background: rgb(56, 94, 132);
   height: max-content;
   position: fixed;
-  z-index: 2;
+  z-index: 99;
 }
 .navbar img {
   width: 100px;
@@ -482,7 +621,7 @@ a {
 .navbar .burger-btn {
   font-size: 2rem;
   cursor: pointer;
-  z-index: 3;
+  z-index: 99;
 }
 @media (min-width: 800px) {
   .navbar .burger-btn {
@@ -498,7 +637,7 @@ a {
   height: 0;
   background-color: #f5f5f5;
   position: fixed;
-  z-index: 2;
+  z-index: 99;
   margin-top: 83px;
 }
 @media (min-width: 800px) {
@@ -515,12 +654,18 @@ a {
   cursor: pointer;
   font-size: 1.5rem;
 }
+.menu ul:hover {
+  color: white;
+}
 
 .nav-list {
   display: none;
   list-style: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.nav-list a {
+  color: rgb(227, 227, 227);
 }
 @media (min-width: 800px) {
   .nav-list {
@@ -529,19 +674,8 @@ a {
   }
 }
 
-#footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #345995;
-}
-#footer ul {
-  list-style: none;
-  margin: 10px;
-}
-#footer .reseaux-link {
-  margin: auto 0;
-  font-size: 2rem;
+.download {
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

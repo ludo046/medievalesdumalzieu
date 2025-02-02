@@ -1,4 +1,4 @@
-body{
+.no-scroll{
     animation: noScroll 6s 1 ease-out forwards;
 }
 .load{
@@ -23,8 +23,9 @@ body{
     }
 }
 #archives-banner{
+    padding-top: 83px;
     background-image: url('../images/bannerArchive.jpg');
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +43,7 @@ body{
         background-color: rgba(0, 0, 0, 0.596);
         width: 100%;
         padding: 15px;
+        z-index: 2;
         i{
             cursor: pointer;
             font-size: 1.5rem;
@@ -96,16 +98,16 @@ body{
     h2{
         padding-left: 55px;
     }
-    .year-content{
-        height: 0%;
-        @media only screen and (min-width : 800px) {
-            display: flex;
-            flex-direction: row;
-            }
+    // .year-content{
+    //     height: 100vh;
+    //     @media only screen and (min-width : 800px) {
+    //         display: flex;
+    //         flex-direction: row;
+    //         }
         iframe{
             margin-left: 50px;
         }
-        .carousel{
+        .carousels{
             width: 100%;
             height: 50%;
             padding-left: 50px;
@@ -118,14 +120,15 @@ body{
             .slide{
                 display: inline-block;
                 height: 100%;
+                width: 100%;
                 img{
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
         }
     }
 
-}
+//}
 
