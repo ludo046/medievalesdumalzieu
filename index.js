@@ -2,10 +2,14 @@ const burgerBtn = document.querySelector('.burger-btn');
 const menu = document.querySelector('.menu');
 const navbar = document.querySelector('.navbar')
 
-window.onload = function(){
-    if(window.innerWidth > 740){
+window.onload = () => {
+    if(window.innerWidth < 740){
         menu.style.height = 0;
         menu.style.opacity = 0;
+    } else {
+      menu.style.height = "300px";
+      navbar.style.boxShadow = "none";
+      menu.style.opacity = 1;
     }
 }
 

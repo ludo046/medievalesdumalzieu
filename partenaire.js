@@ -116,26 +116,40 @@ function createCard(a){
             amiCard.classList.add('card_amis')
             const amiLink = document.createElement('a')
             amiLink.setAttribute('href', a[i].site)
-            const amiImg = document.createElement('img')
-            amiImg.src = a[i].picture
+            const amiName = document.createElement('h2')
+            amiName.innerHTML = a[i].partenaireName
+            const amiPhone = document.createElement('p')
+            amiPhone.innerHTML = a[i].phone
+            const amiAdress = document.createElement('p')
+            amiAdress.innerHTML = a[i].adresse
+            console.log(a[i].partenaireName);
             
-            amiLink.appendChild(amiImg)
+
+            amiLink.appendChild(amiName)
+            amiLink.appendChild(amiPhone)
+            amiLink.appendChild(amiAdress)
             amiCard.appendChild(amiLink)
             amiCards.appendChild(amiCard)
         }
     }
 }
 console.log(partenaires);
+console.log(amis);
+
 
 
 const burgerBtn = document.querySelector('.burger-btn');
 const menu = document.querySelector('.menu');
 const navbar = document.querySelector('.navbar')
 
-window.onload = function(){
-    if(window.innerWidth > 740){
+window.onload = () => {
+    if(window.innerWidth < 740){
         menu.style.height = 0;
         menu.style.opacity = 0;
+    } else {
+      menu.style.height = "300px";
+      navbar.style.boxShadow = "none";
+      menu.style.opacity = 1;
     }
 }
 

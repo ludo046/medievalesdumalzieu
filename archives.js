@@ -130,6 +130,17 @@ window.onload = function(){
   }
 }
 
+window.onload = () => {
+  if(window.innerWidth < 740){
+      menu.style.height = 0;
+      menu.style.opacity = 0;
+  } else {
+    menu.style.height = "300px";
+    navbar.style.boxShadow = "none";
+    menu.style.opacity = 1;
+  }
+}
+
 burgerBtn.addEventListener('click', function(){
   if(menu.style.height == "0px"){
       menu.style.height = "300px";
@@ -140,7 +151,6 @@ burgerBtn.addEventListener('click', function(){
       menu.style.opacity = 0;
     }
 })
-
 
 
 const startDate = new Date("2012-01-01");

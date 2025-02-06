@@ -521,6 +521,11 @@ nav {
 .formule_bloc_amis .card_bloc_amis .card_amis h3, .formule_bloc_amis .card_bloc_amis .card_amis p {
   margin-left: 50px;
 }
+@media (max-width: 767px) {
+  .formule_bloc_amis .card_bloc_amis .card_amis {
+    width: 100vw;
+  }
+}
 
 .contact {
   padding-top: 100px;

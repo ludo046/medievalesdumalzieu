@@ -64,6 +64,9 @@ nav{
             h3, p{
                 margin-left: 50px;
             }
+            @media (max-width: 767px){
+                width: 100vw;
+            }
         }
     }
 }

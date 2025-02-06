@@ -123,20 +123,24 @@ function createTroupeCard(){
 const menu = document.querySelector('.menu');
 const navbar = document.querySelector('.navbar')
 
-window.onload = function(){
-    if(window.innerWidth > 740){
-        menu.style.height = 0;
-        menu.style.opacity = 0;
-    }
+window.onload = () => {
+  if(window.innerWidth < 740){
+      menu.style.height = 0;
+      menu.style.opacity = 0;
+  } else {
+    menu.style.height = "300px";
+    navbar.style.boxShadow = "none";
+    menu.style.opacity = 1;
+  }
 }
 
 burgerBtn.addEventListener('click', function(){
-    if(menu.style.height == "0px"){
-        menu.style.height = "300px";
-        navbar.style.boxShadow = "none";
-        menu.style.opacity = 1;
-      } else {
-        menu.style.height = 0;
-        menu.style.opacity = 0;
-      }
+  if(menu.style.height == "0px"){
+      menu.style.height = "300px";
+      navbar.style.boxShadow = "none";
+      menu.style.opacity = 1;
+    } else {
+      menu.style.height = 0;
+      menu.style.opacity = 0;
+    }
 })
